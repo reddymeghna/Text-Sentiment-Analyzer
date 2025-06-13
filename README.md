@@ -59,6 +59,19 @@ C --> D[Returns Sentiment & Confidence]
 D --> E[Beautifully Rendered Explanation]
 
 ```
+
+## 📁 Folder Structure
+
+sentiment-analyzer/
+├── api/
+│   └── index.py          ← Flask backend with Groq API call
+├── templates/
+│   └── index.html        ← Jinja2 frontend UI
+├── requirements.txt      ← Flask, CORS, requests
+├── vercel.json           ← Vercel config
+└── README.md             ← This file 😉
+
+
 ## 🔒 Environment Variables
 Create a .env file locally for testing:
 GROQ_API_KEY=your-groq-api-key-here
