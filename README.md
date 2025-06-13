@@ -57,3 +57,24 @@ A[You Upload a .txt File] --> B[Flask Receives File]
 B --> C[Groq LLaMA3 API]
 C --> D[Returns Sentiment & Confidence]
 D --> E[Beautifully Rendered Explanation]
+
+```
+## 🔒 Environment Variables
+Create a .env file locally for testing:
+GROQ_API_KEY=your-groq-api-key-here
+
+## 🧪 Local Development
+
+# Step 1: Clone the repo
+git clone https://github.com/reddymeghna/Text-Sentiment-Analyzer.git
+cd sentiment-analyzer
+
+# Step 2: Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # on Windows: venv\Scripts\activate
+
+# Step 3: Install dependencies
+pip install -r requirements.txt
+
+# Step 4: Run locally
+python app.py
