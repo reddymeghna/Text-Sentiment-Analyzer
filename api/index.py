@@ -7,7 +7,6 @@ app = Flask(__name__, template_folder="../templates")
 CORS(app)
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 def analyze_sentiment(text):
@@ -48,11 +47,6 @@ def index():
                 sentiment, confidence, explanation = analyze_sentiment(text)
     return render_template("index.html", sentiment=sentiment, confidence=confidence, explanation=explanation)
 
-# Required by Vercel
-def handler(environ, start_response):
-    return app(environ, start_response)
-
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
+# Required for Vercel
+# Do NOT manually create a `handler()` here
+# Vercel will auto-detect `app` if it's in `api/index.py`
