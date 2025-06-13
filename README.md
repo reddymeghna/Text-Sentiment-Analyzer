@@ -78,3 +78,8 @@ pip install -r requirements.txt
 
 # Step 4: Run locally
 python app.py
+
+
+
+🤝 Let's Connect
+Made with ❤️ by Meghna Reddy
