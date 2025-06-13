@@ -14,7 +14,7 @@
 
 ## 🔗 Live Demo
 
-👉 [Try it Now](https://sentiment-analyzer-meghna.vercel.app) – Just upload a `.txt` file and get:
+👉 [Try it Now](https://text-sentiment-analyzer-tau.vercel.app/) – Just upload a `.txt` file and get:
 - 📊 **Sentiment** (Positive / Negative / Neutral)
 - 🎯 **Confidence Score**
 - 💬 **Detailed Explanation**
